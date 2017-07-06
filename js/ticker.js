@@ -70,7 +70,7 @@ function startTicker() {
 
       // REMOVE WHEN SCALE = 0
       if (message.scale.x <= 0) {
-        message.destroy();
+        message.destroy(true);
         totalMessages = chatContainer.children.length - 1;
       }
     }
